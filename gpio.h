@@ -1,0 +1,11 @@
+int open_gpio (void);
+int config_led(int pin, int fd);
+int config_button(int pin, int fd);
+int button_pushed(int reqfd);
+int button_released(int reqfd);
+void led_on(int reqfd);
+void led_off(int reqfd);
+void write_pwm(char* path, char* val);
+void config_buzzer(void);
+void buzzer_on(int num);
+void buzzer_off();
